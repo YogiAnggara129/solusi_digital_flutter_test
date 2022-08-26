@@ -15,13 +15,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ChangeNotifierProvider<NewsViewModel>(
       create: (_) => NewsViewModel(),
-      child: MaterialApp(
+      child: const MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
-        theme: ThemeData(
-          scaffoldBackgroundColor: Colors.white,
-        ),
-        home: const HomeView(),
+        home: HomeView(),
       ),
     );
   }
